@@ -30,7 +30,6 @@ form.addEventListener('submit',(event)=>{
             container.innerText = err.status; 
         });
         search.value="";
-
     
 });
 
