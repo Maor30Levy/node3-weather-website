@@ -10,7 +10,7 @@ form.addEventListener('submit',(event)=>{
     event.preventDefault();
     clearChilds(container);
     const searchValue = search.value;
-    fetch(`http://localhost:3000/weather?address=${searchValue}`)
+    fetch(`/weather?address=${searchValue}`)
         .then((response)=>{
             response.json()
                 .then((resObj)=>{

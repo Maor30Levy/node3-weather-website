@@ -5,6 +5,7 @@ const geocode = require ('../utils/geocode');
 const weather = require ('../utils/weather');
 const axios = require ('axios');
 const app = express();
+const port = process.env.PORT || 3000;
 const publicDirectory = path.join(__dirname,"../public");
 const viewsPath = path.join(__dirname,"../templates/views");
 const partialsPath = path.join(__dirname,"../templates/partials");
@@ -74,6 +75,6 @@ app.get('/help/*',(req,res)=>{
 });
 
 
-app.listen(3000,()=>{
-    console.log('Server is connected. port: ',3000);
+app.listen(port,()=>{
+    console.log('Server is connected. port: ',port);
 });
