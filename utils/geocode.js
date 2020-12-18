@@ -6,7 +6,7 @@ const geocode = async (city, callback)=>{
     try{
         const result= await axios.get(url);
         console.log(result.data.features[0].place_name);
-        return callback(result.data.features[0].center[1],result.data.features[0].center[0]) ;
+        return callback(result.data.features[0].center[1],result.data.features[0].center[0],result.data.features[0].place_name) ;
     }
     catch (err){
         throw {

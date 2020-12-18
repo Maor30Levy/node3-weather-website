@@ -31,7 +31,9 @@ app.get('/weather',async (req,res)=>{
         let result = await geocode(req.query.address,weather);
         res.send({
             description: result[0],
-            tempature: result[1]
+            tempature: result[1],
+            icon: result[2],
+            location: result[3],
         });
     }catch(err){
         res.send(err);
