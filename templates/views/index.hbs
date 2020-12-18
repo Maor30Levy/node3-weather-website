@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="icon" href="/img/weatherIcon.png">
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <form action="http://localhost:3000/weather" id="form">
+            <input type="text" name="address" id="search" value="Location"/>
+            <input type="submit" value="Find Weather" id="submit"/>
+        </form>
+        <div id="container" class="container">
+
+        </div>
+    </div>
+    {{>footer}}
+    <script src="/js/weather.js"></script>
+</body>
+</html>
