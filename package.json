@@ -10,7 +10,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "dev": "env-cmd -f ./config/dev.env node /src/index.js"
+    "dev": "node /src/index.js"
   },
   "author": "",
   "license": "ISC",
