@@ -10,7 +10,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "dev": "node /src/index.js"
+    "start": "node /src/index.js"
   },
   "author": "",
   "license": "ISC",
